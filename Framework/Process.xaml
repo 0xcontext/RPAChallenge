@@ -10,11 +10,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-<<<<<<< 4fcdbe5fdeb2df73065f24dcc795a36ec0deee7b
-  <sap:VirtualizedContainerService.HintSize>1411,2121</sap:VirtualizedContainerService.HintSize>
-=======
-  <sap:VirtualizedContainerService.HintSize>1411,2398</sap:VirtualizedContainerService.HintSize>
->>>>>>> Commit1
+  <sap:VirtualizedContainerService.HintSize>1411,2017</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -91,33 +87,23 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-<<<<<<< 4fcdbe5fdeb2df73065f24dcc795a36ec0deee7b
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="627,2056" sap2010:WorkflowViewState.IdRef="Sequence_1">
-=======
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="627,2333" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="asset" />
-    </Sequence.Variables>
->>>>>>> Commit1
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="627,1952" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="From Mai2A" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="From Dev2" />
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="585,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process: &quot; + in_TransactionItem.SpecificContent(&quot;First Name&quot;).ToString +&quot; &quot;+ in_TransactionItem.SpecificContent(&quot;Last Name &quot;).ToString]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="585,1559" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="150e6435-b1fe-49a1-844f-33d64112b723" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="585,1657" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="150e6435-b1fe-49a1-844f-33d64112b723" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="551,1343" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="551,1441" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -148,13 +134,13 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="509,575" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[in_TransactionItem.SpecificContent]">
+            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="509,674" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[in_TransactionItem.SpecificContent]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Object)">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" Name="KeyValue" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473,450" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473,549" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Default="Address" Name="LabelValue" />
                       <Variable x:TypeArguments="x:String" Name="Value" />
@@ -164,6 +150,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="431,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[KeyValue.Value.ToString]" />
                     <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
@@ -205,13 +192,5 @@
         <uix:TargetApp Area="4472, -366, 2576, 1426" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAArbSURBVGhD7ZgJUBRXGsfd3SRljEYEwWtVvNYr3twz3AzHcIlAEXFRwcQ1arJqxCAx0XgjakAQBRkOETGKgolRBDxQPEGIOsMxDAiKHAZQGIJRCd++19NvpunpGTSabNXWflW/6qaBeb//e1+/buj1//pfqL+gMtXXtVw7Y9KOvfxZ6en2vPw8d3uZxMdVftdX2JbnZidLd7C4HM2beWzN1AlhRno6fPw79K//98p2qIEw3HR6UoG3c2OltxNUeglUzHaASk97GjuQediqQNduetg3hBl/kGhloOtMf9yfVyYDdfknnCyvVfq6ACWOmePYPQAJoQxipwriTuNmQx3TbUyvGOn259Ef/8eVYb/3xiXYmZ+q8hVClY8zhVZ55QpwrAIJQGFNfR3Hm3FyZJ93x9DDvdmyHWbgettX+LjKxwWJY2h5EuBVQjBXgARwtQKZ0AqKhTYtb7ytFk8eFyz70L1TJc8IgMW5VqFb+2hYAWUIFICEQEjdbDqDxo5cSQ//erXZdHpslZ8rVKF+p6Dle2whEoJrBUgA5Qp0XwXChmkTo2mN31eLxo8KLseCRJ4VoFsLcckrAyhuYLVV0CIvc7GECqElBI4dvoLWebWyNNBzK/YSdJYimQpvLEzkOUK81Apo2IWYAZghUACM1NW6k68/wJHWernS69vbMEdo86QIfbDY0xbKkaAMh2CsQLfZ17QCSnlFAG55BJEnAWj5Chc+RbEzv2VEn96jab2ey26py8UsZz7ccLWG22jQEiQjnSNQzrra7LMDkPZRhuCYfSoEffMyV4ArhDMPYk2mZtB62qv3hMH8san/guCl7nBRyINC9GF30cCls+1BhkXJzDPlOUJIkXiJhx1IKGxBgoSVoFmXoMnBiJGwEiSsBE2gGImLnSwUR8Qsnf58WlNzjdzkc2106sdgHrMADqEPuSJES+huA2IkUYZnlBmCJV7mjVrtm1C4f/I4NErE0FRf96KlqaGz+YEEHt46DpUnP4fSvWYgjTEC2T5jqIo1guo4Y6iJN4HaRGOoTTKBuhRjqD9oDD+nGkNTmhG0HDUB+XFTkJ8whUu7pt+kNbmrz9QRLlieEBjiDScFPLjuagl30KzhGZV60iEY4jJExYYQ+LlUAq2trVppqi2BmqxVUJ1iBg8Om0FtmhnUfWdO0XDcHJozLKD1lAV0ZPHg12w+PMvhw/NcdDzHg+fn+OBsputC66rXkCX2SVh81CEFkxMXQaSXDZx24lOtJEYrUY5aAwuTABXoWJMiUgqW1LRBzNk2+EQkB9/IdvCJaIcl6HxvVhuUVLcpf66hKA4epvOgPoMHLT/y4ZdsS3h2wRp+u0yTj7iCuIq4hriOuGEN8esmxNO63Qu/3hruC2gg8gTPzX5w3MEMclEPFqOVkKAQUnQ/kNm/n5JACbU8aYWoLDl47moH953dcQtvB1cEPkaelkPzY0WIJxIRkrRFkrbQdc0Ouq6j43V0vGEHcNMeoABRiM5voSMGnddnW9dzvor3Hj+YZ3joI2BCQnwV5AinUIiLTjzUSlZQilqpwssBqjaGKuVD0uTggeQxXAFICOGOdghOVYXouLMWugoE0FUoQJKIIoID44ggIW7ZgdmU981obVXp+pluG5myCDDsEFaRAXDMzgSyBWaQj25svHvgB1xTWSklEXVGriZNIOJMcIgItBLUKjSWQGehC5J0pIXZMAPg1bCDTctGb6K1VaW/3PYICcDFkpUe8D1ahfOO5nADhZDRs497HrdNTzPPlMe4IiT0PdEhWYckcQB2CHV5TOqWD1JpbVUNWed2iUucMC0uEERCczgrMIfLaG+uOZVBDY5vWE3imuQJUWfom/peJhLlWoHurUO4cGDmBVpbVUPDfStGpAQBhi1Prvut94FT9saQJ7BQbpl4t2EHIDADMMVdwhR8fEDRRq2ojX4r1DD7VAiVPKY8w7yc1lbV8Pj5crYwgVwflRwEO/xtIcfeFPVuIzU43iY1SRNxZgAsTs69drcrArQ0wIubLHnlzDNRBJDnW8lpbVWNiAtoY4tzIQifCz/YGsNjRgBmyxDYs86ErIDv7gbIvVoAMWkZEBEXDiER8RSRB8IhNnErXP7+E2i+4q4UJ7RdsmyjtVU1KHyOdPjBQNAGCbFqiQs8KlO0EH5IscW1zTw+eoY1wOJd55TCPXH0cGi3IOUZZuotpP+lMI9LmsnfaWbFBEDZDyeoAPgJS6SZEHE2fuFlEPxtMqeoNjZExYD4bAAKYAvn909Xv4kHLLU+QgQ1wQyyO3kLFQC/HjBnni3P7Hn/8Duccq9CwY+LIGXzJPVt9H3fmVvZwoRhyQspmNf+kRgI1WWlT3EI/HqgbdZxiDchT/h6jdNRWltVb48zsCCiL8PQ5AUQmBtBrQJ+LcCvB1ziGA/U81xt88W3B2BtpIgCn5Nr+BiKrjG/ZrI6LKqtv+5AQ1pdUfgFaVCkXwMWY6MpACaiSPFAwyHw6wF+wrIDLN6VqyZBxFbu2IeIUV7DYVbvjIVPt0WrhWLi6h+URKurSmcRT8QUZzOEhnk+LDkQhcikQmDw60HU6TbqITUb7fN4q2QPTlgVvg++y7oIx7LzqCChe0RUmN0H0yG/SAwb96dA8K5Yzt/FqK3CO5OHODHlCOwAbAYnzYfAnAi4W1epDELIQfs81+B4ppdvjQJpTS3cq22gZnzN7jj4ck8CdDz9FQolUiog1+8SjKwd1P/lMjDUOZ8phmF/zWZQUgDFiINB8FFuJByWnIc7D2VQ1/wIog5ncA6OwdJ3pFVQVnUfPtseTQnfr2+Eqgd16HtRKJDmFsL4Lw++SGur6p1x+rzBidyimoKQAAQD6jgfrdpCWL4nmnNwsgISWTVIKqthXsg2KBCXQXvHU1iLvk9aR5M8JjD462Jau3sN+NQmky3JJUrAwlzoJ/6Tc2AMDoBX4KcyGTxqeQzXbpfAs+fPYbsojVqJtZHa5Qm0cvf6m36/MQbRfi1cslywpcmxpwCfoQDFpRXwuE0Ot0qk8PzFC4hOy4QVYTHU9393AFz4hjZI8O/UJMqEyDLPMQMT58GyyJdtoa1wpVgMLzo74Ru0+3wevp9qJe0ttP4nWpe7+ggmrmTLMmHKMqWZ5wuidnIOjmHfxHgrrUQ3cGNzC2qj/T3eB5w3Mbv6zTOONkjkFsaCbGGMXoIK65gvOAcnK1BeXYt2nXrFNopE8RNY/ksHlN27Tz3QtK0A5zbKVb0dxq8YGD+3U5M4kSXyzCCGsYGcg2Nwr5/JvwnZVwupc/wgW0E/yMrvPYC9R05qfRaoPci01VuTBzvqRfq2EDkm7AC6Cf4q9vvBnuQNaoOTmcWtQiTxNbz7rEat8+/te5U/w7UKnK8SPdVf9fuO7r/MKlNP5N9tpoksCUIYIJoLdgm+0HTVG9aj93m2BCWMjsyblRxxizG/ZrJi254nrzT77HprjJ65ToggX0/EMeOIAQlzKXTi/KDy6mzqryjx2flqIkw5dgD2dSbjpsyYTau8Xr09aYhT3/lmIr2dnvW6aFWYAXREH8KydD/oKhJ0Kf4UtKX+GGHLvCpTTHgL6eHfXOFXcbwq73pN3fLeYou0/sH2eTobhNLCTEF90zm+XHzURJqzb1pe8saJaV+tdjq2ekeUnEtOG7ht3tjMv27h/sU3IZcoF/hnX6vn/6jCUngvxw8k/FQlwvgcX8Pf0y7eq9d/AB1prLbuq/q3AAAAAElFTkSuQmCC" InformativeScreenshot="e177607c55debf7317f377ebdf17b3b7.png" Selector="&lt;html app='chrome.exe' title='Rpa Challenge'/&gt;" Url="[in_Config(&quot;ChallengeURL&quot;).ToString]" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <Assign sap:VirtualizedContainerService.HintSize="585,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[asset]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:String">a</InArgument>
-      </Assign.Value>
-    </Assign>
   </Sequence>
 </Activity>
