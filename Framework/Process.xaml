@@ -97,7 +97,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="New Feature Rebase" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Feature 2" />
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="585,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process: &quot; + in_TransactionItem.SpecificContent(&quot;First Name&quot;).ToString +&quot; &quot;+ in_TransactionItem.SpecificContent(&quot;Last Name &quot;).ToString]" />
     <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="585,1660" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="150e6435-b1fe-49a1-844f-33d64112b723" Version="V1">
       <uix:NApplicationCard.Body>
