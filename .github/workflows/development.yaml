@@ -10,7 +10,7 @@ env:
   # Replace with your Orchestrator Values
   PROJECT_NAME: uipath.github.action
   PROJECT_FOLDER: ${{ github.action_path }}
-  ORCH_URL: 
+  ORCH_URL: https://cloud.uipath.com/kbprod/Prod/orchestrator_
   ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
   ORCH_CLIENT_ID: ${{ secrets.UIPATHCLIENTID }}
   ORCH_USER_KEY: ${{ secrets.UIPATHUSERKEY }}
